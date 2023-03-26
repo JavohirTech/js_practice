@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator | JS Practice</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="color-space"></div>
+        <div class="color-settings">
+            <div class="direction">
+                <label for="direction">Direction</label>
+                <select name="" id="direction">
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right Top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right Bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left Bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left Top</option>
+                </select>
+            </div>
+            <div class="colors">
+                <label for="color">Colors</label>
+                <div class="div">
+                    <input type="color" id="topColor">
+                    <input type="color" id="bottomColor">
+                </div>
+            </div>
+        </div>
+        <div class="code-space">
+            background: linear-gradient(to bottom #fff, #ccc);
+        </div>
+            <button type="button" class="copy-code">Copy Code</button>
+    </div>
+
+
+</body>
+</html>
