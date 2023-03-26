@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game | Javascript Practice</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score"> Score: 0</span>
+            <select name="" id="chooseLevel" onchange="changeLevel(chooseLevel.value)">
+                <option disabled selected>Choose Level</option>
+                <option value="300">Beginner</option>
+                <option value="200">Medium</option>
+                <option value="100">Advanced</option>
+            </select>
+            <span class="high-score"><i class="fa-brands fa-apple"></i> </span>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+    </div>
+    
+</body>
+</html>

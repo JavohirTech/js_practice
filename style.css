@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/blank-nature-park-landscape-scene-daytime_1308-56060.jpg?w=1380&t=st=1679814272~exp=1679814872~hmac=d19f0722c50ab6bd1aa4059a73dcda142bb9ae1ec4e8c8e23c6c4928259a6512");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.wrapper {
+    width: 67vmin;
+    height: 75vmin;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.game-details {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+
+
+
+.play-board .food::before{
+    font: var(--fa-font-solid);
+    content: "\f5d1";
+    color: red;
+    font-size: 20px;
+}
+
+.play-board .head {
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    text-align: center;
+    color: white;
+    width: calc(100%/4);
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-right: 2px solid #fff;
+}
+
+#chooseLevel{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+}
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
