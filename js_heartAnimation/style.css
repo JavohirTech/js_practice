@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 468px;
+    height: 585px;
+    background-image: url('https://images.pexels.com/photos/6652928/pexels-photo-6652928.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    cursor: pointer;
+}
+
+.wrapper .bxs-heart {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bxs-heart.active {
+    animation: showheart 0.8s linear forwards;
+}
+
+@keyframes showheart {
+    30% {
+        opacity: 1;
+        font-size: 80px;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 70px;
+    }
+
+    80% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    90% {
+        opacity: 1;
+        font-size: 60px;
+    }
+}
+
+.post {
+    /* border: 1px solid rgb(173, 173, 173); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.icons {
+    padding: 5px 0;
+}
+
+.icons i {
+    color: black;
+    font-size: 24px;
+    padding-right: 15px;
+}
+
+.avatar {
+    background: linear-gradient(to right, #ffa95f 5%, #f99c4a 15%, #f47838 30%, #e75157 45%, #d92d7a 70%, #cc2a92 80%, #c32e92 95%);
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.top_post {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top_post span {
+    font-size: 12px;
+}
+
+.top_post span:nth-child(2) {
+    font-weight: 600;
+}
+
+.top_post>* {
+    margin-right: 10px;
+}
