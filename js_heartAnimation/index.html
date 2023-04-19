@@ -10,6 +10,7 @@
     <script src="./script.js" defer></script>
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -19,7 +20,8 @@
         <div class="top_post">
             <img src="https://randomuser.me/api/portraits/men/15.jpg" class="avatar" alt="">
             <span>javohir.gulomjonov</span>
-            <span style="color: grey"> | 12m</span>
+            <span style="color: grey"> | 12m |</span>
+            <span style="color: rgb(0, 191, 255);">Follow</span>
             <i class='bx bx-dots-horizontal-rounded' style="font-size: 24px; margin-left: auto; padding-right: 0;"></i>
         </div>
 
@@ -40,12 +42,26 @@
             <small style="font-size: 10px; font-weight: 600;">See translation</small>
             <div class="comment_post">
                 <input type="text" class="comment_input" placeholder="Add a comment">
-                <i class='bx bx-smile'></i>
+                <small class="post-btn">Post</small>
+                <i type="button" class='bx bx-smile'></i>
             </div>
         </div>
     </div>
 
 
 </body>
+<script src="Emoji.js"></script>
+<script>
+    new EmojiPicker({
+        trigger: [
+            {
+                insertInto: ['.comment_input'],
+                selector: '.bx-smile'
+            }
+        ],
+        closeButton: true,
+        dragButton: true
+    })
+</script>
 
 </html>

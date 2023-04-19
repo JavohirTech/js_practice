@@ -75,10 +75,19 @@ body {
     padding: 5px 0;
 }
 
+.icons .bxs-heart {
+    color: red;
+}
+
 .icons i {
     color: black;
-    font-size: 24px;
+    font-size: 28px;
     padding-right: 15px;
+}
+
+.icons i:hover {
+    color: grey;
+    cursor: pointer;
 }
 
 .avatar {
@@ -133,4 +142,19 @@ body {
 .comment_post i {
     cursor: pointer;
     color: grey;
+}
+
+.fg-emoji-container,
+.fg-emoji-list {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-btn {
+    color: rgb(0, 191, 255);
+    padding: 0 10px;
+}
+
+.activ {
+    display: none !important;
 }
