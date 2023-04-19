@@ -28,7 +28,7 @@ body {
 .wrapper .bxs-heart {
     font-size: 40px;
     color: red;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     opacity: 0;
 }
@@ -66,9 +66,9 @@ body {
 
 .post {
     width: 468px;
-    /* border: 1px solid rgb(173, 173, 173); */
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .icons {
@@ -104,6 +104,12 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    transition: all 0.4s ease;
+}
+
+.top_post:hover .profile_hover {
+    visibility: visible;
+    opacity: 1;
 }
 
 .top_post span {
@@ -157,4 +163,74 @@ body {
 
 .activ {
     display: none !important;
+}
+
+.profile_hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    z-index: 111;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+}
+
+.profile_hover-top {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.profile_hover-top img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.profile_data small {
+    font-size: 10px;
+    color: grey;
+}
+
+.profile_hover-body-stats {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.profile_hover-body-stats span b {
+    font-size: 20px;
+}
+
+.profile_gallery {
+    display: flex;
+
+}
+
+.profile_hover-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_hover-footer button {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile_hover-footer button i {
+    font-size: 20px;
 }

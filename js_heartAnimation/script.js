@@ -36,5 +36,3 @@ setInterval(() => {
         postBtn.classList.remove('activ');
     }
 }, 1000);
-
-console.log(commentInput);
