@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 1000px;
+    height: 100vh;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    transition: all 0.4s ease;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    animation: newheart 4s infinite;
+}
+
+@keyframes newheart {
+    30% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
