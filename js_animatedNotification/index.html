@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Alert Notification | Javascript Practice</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Notification | Javascript Practice</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-
+    <ul class="notifications"></ul>
     <div class="buttons">
-        <button class="success-btn">Success</button>
-        <button class="error-btn">Error</button>
-        <button class="warning-btn">Warning</button>
-        <button class="info-btn">Info</button>
+        <button class="btn" id="success">Success</button>
+        <button class="btn" id="error">Error</button>
+        <button class="btn" id="warning">Warning</button>
+        <button class="btn" id="info">Info</button>
     </div>
-
-    <div class="alert">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, consequatur!</p>
-    </div>
-
 </body>
 
 </html>
