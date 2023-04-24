@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
 [class$="btn"] {
     font-size: 20px;
     border: none;
@@ -12,6 +19,7 @@
     border-radius: 5px;
     background-color: lightgrey;
     transition: all 0.4s ease;
+    color: #fff;
 }
 
 [class$="btn"]:hover {
@@ -19,29 +27,49 @@
     filter: brightness(125%);
 }
 
-body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-}
-
-
 [class|=success] {
     background-color: forestgreen;
-    color: #fff;
 }
 
 [class|=error] {
     background-color: tomato;
-    color: #fff;
 }
 
 [class|=warning] {
     background-color: orange;
-    color: #fff;
 }
 
 [class|=info] {
     background-color: dodgerblue;
-    color: #fff;
+}
+
+.alert {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    right: -600px;
+    transition: all 0.4s ease;
+}
+
+.show {
+    animation: show 0.4s forwards;
+}
+
+.hide {
+    animation: hide 0.4s backwards;
+}
+
+@keyframes show {
+    100% {
+        right: 10px;
+    }
+}
+
+@keyframes hide {
+    100% {
+        right: -600px;
+    }
 }
